@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="css/main1.css">
+    <link rel="stylesheet" type = "text/css" href="bootstrap/bootstrap-reboot.min.css">
+    <script src = "Form.js"> </script>
+    <title>Document</title>
+</head>
+<body class = "one">
+    <div class = "container-contact100">
+        <div class = "wrap-contact100">
+            <form class ="contact100-form" onsubmit = "submitted()">
+            <span class = "contact100-form-title">
+                Create a new event!
+            </span>
+            <div class = "wrap-input100 input100-select">
+                <span class = "label-input100">
+                    Event type: &nbsp; 
+                        <select class = "browser-default custom-select mb-4">
+                            <option value disabled selected> Choose an option </option>
+                            <option> Event option 1 </option>
+                            <option> Event option 2 </option>
+                            <option> Event option 3 </option>
+                        </select>
+                </span>
+            <br><br>
+            </div>
+            <div>
+                <span class = "label-input100">
+                    Event name: &nbsp; <input type = "text" class = "form-control mb-4" required>    
+                </span>
+            </div> 
+            <br><br>
+            <div>
+                <span class = "label-input100">
+                Event dates: &nbsp; <input type = "text" class = "form-control mb-4" placeholder="mm/dd/yyyy" required> to 
+                <input type = "text" class = "form-control mb-4" placeholder="mm/dd/yyyy" required>
+                </span>
+            </div>
+            <br><br>
+            <div>
+                <span class = "label-input100">
+                Posting date: &nbsp; <input type = "text" class = "form-control mb-4" placeholder="mm/dd/yyyy" required>
+                </span>
+            </div>
+            <br><br>
+            <div class = "custom-control custom-checkbox">
+                <span class = "label-input100">
+                    <input type = "checkbox" class = "custom-control-input" required > &nbsp; Is registration required?
+                    <br>
+                    <input type = "checkbox" class = "custom-control-input" required > &nbsp; Is this event associated with any family programs?
+                    <br>
+                    <input type = "checkbox" class = "custom-control-input" required > &nbsp; Upon registration completion, are users to receive an auto-generated email?
+                    <br>
+                    <input type = "checkbox" class = "custom-control-input" required > &nbsp; Is there a point of contact?
+                    <br>
+                    <input type = "checkbox" class = "custom-control-input" required > &nbsp; Is there a hosting command point of contact?
+                </span>
+            </div>
+            <br><br>
+            <div class = "container-contact100-form-btn">    
+                <button class="btn btn-primary" type="submit"> Save </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-secondary" type ="reset"> Cancel </button> 
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
